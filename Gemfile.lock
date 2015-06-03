@@ -35,6 +35,7 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     arel (5.0.1.20140414130214)
+    bcrypt (3.1.10)
     builder (3.2.2)
     coffee-rails (4.1.0)
       coffee-script (>= 2.2.0)
@@ -44,6 +45,13 @@ GEM
       execjs
     coffee-script-source (1.9.1.1)
     daemons (1.2.2)
+    devise (3.5.1)
+      bcrypt (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 3.2.6, < 5)
+      responders
+      thread_safe (~> 0.1)
+      warden (~> 1.2.3)
     diff-lcs (1.2.5)
     erubis (2.7.0)
     eventmachine (1.0.7)
@@ -80,6 +88,7 @@ GEM
     modernizr-rails (2.7.1)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
+    orm_adapter (0.5.0)
     polyglot (0.3.5)
     rack (1.5.3)
     rack-test (0.6.3)
@@ -101,6 +110,8 @@ GEM
       thor (>= 0.18.1, < 2.0)
     rake (10.4.2)
     ref (1.0.5)
+    responders (1.1.2)
+      railties (>= 3.2, < 4.2)
     rspec (3.2.0)
       rspec-core (~> 3.2.0)
       rspec-expectations (~> 3.2.0)
@@ -157,6 +168,8 @@ GEM
     uglifier (2.7.1)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    warden (1.2.3)
+      rack (>= 1.0)
     zeus (0.15.4)
       method_source (>= 0.6.7)
 
@@ -165,6 +178,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails
+  devise
   execjs
   gumby
   haml-rails

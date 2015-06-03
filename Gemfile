@@ -20,6 +20,7 @@ gem 'execjs'
 gem 'therubyracer'
 gem 'libv8', '3.16.14.3'
 
+gem 'devise'
 
 group :assets do
   gem 'sass-rails'
